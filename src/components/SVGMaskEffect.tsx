@@ -1,12 +1,21 @@
 "use client";
 import { MaskContainer } from "./ui/svg-mask-effect";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+
 export function SVGMaskEffect() {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+  
   return (
     <div className="h-[30rem] w-full flex items-center justify-center  overflow-hidden">
       <MaskContainer
         revealText={
-          <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold tracking-wider">
+          <p data-aos="zoom-out" className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold tracking-wider">
             By joining us, you’ll not only transform your look but also enjoy a plethora of amazing benefits. From exclusive discounts to personalized services, we ensure our customers feel valued and pampered.
           </p>
         }

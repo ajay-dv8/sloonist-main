@@ -22,7 +22,7 @@ export function Header({ className }: SidebarProps) {
   const items = [
     {
       href: '',
-      title: 'eader items',
+      title: '',
       openInNewTab: true
     }
     // { href: '#pricing', title: 'Features' },
@@ -104,7 +104,7 @@ export function Header({ className }: SidebarProps) {
     <div
       className={cn(
         `flex md:h-12 h-14 items-center justify-center w-full
-          border-b`,
+          border-b backdrop-filter backdrop-blur-lg bg-gray-100 bg-opacity-20`,
         className
       )}
     >

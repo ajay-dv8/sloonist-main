@@ -50,7 +50,7 @@ export default function RootLayout({
           <main
             className={`flex min-h-screen flex-col ${inter.className}`}
           >
-            <Header className='sticky top-0'/>
+            <Header className='sticky top-0 z-50'/>
             <div className="flex flex-1 justify-center w-full">
               <div className="flex w-full max-w-[80rem] h-full">
                 {children}

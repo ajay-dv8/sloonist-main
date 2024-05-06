@@ -19,7 +19,7 @@ export function TracingBeamMain() {
   return (
     <TracingBeam className="px-6 w-full">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {dummyContent.map((item, index) => (
+        {Content.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
             <h2 data-aos="fade-out" className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.badge}
@@ -48,7 +48,7 @@ export function TracingBeamMain() {
   );
 }
 
-const dummyContent = [
+const Content = [
   {
     title: "We are about giving you te best.",
     description: (
