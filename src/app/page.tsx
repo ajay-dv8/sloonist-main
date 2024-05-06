@@ -93,8 +93,8 @@ export default function Home() {
 
             {/* About */}
           <div className="mb-20">
-            <Typography className="max-w-2xl tracking-wide mb-16" variant="h1">
-              <span data-aos="zoom-in" className='opacity-40'>Let me tell you something</span> <br/>
+            <Typography data-aos="zoom-in" className="max-w-2xl tracking-wide mb-16" variant="h1">
+              <span className='opacity-30'>Let me tell you something</span> <br/>
               about us !
             </Typography>
 
@@ -127,7 +127,6 @@ export default function Home() {
 
           </div>
 
-            
         </div>
 
         <TextGenerateEffectMain data-aos="zoom-out-up"/>

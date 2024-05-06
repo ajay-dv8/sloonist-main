@@ -21,8 +21,8 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
-      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
-      title: '',
+      href: '',
+      title: 'eader items',
       openInNewTab: true
     }
     // { href: '#pricing', title: 'Features' },
@@ -44,29 +44,27 @@ export function Header({ className }: SidebarProps) {
   const getAuthButtons = () => (
     <div className="flex gap-6 items-center">
       <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
+        href=""
       >
-        <Typography variant="p">Contact</Typography>
+        <Typography variant="p" id='contact'>Contact</Typography>
       </Link>
 
       <Separator orientation='vertical'/>
 
       <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
+        href=""
       >
-        <Typography variant="p">About</Typography>
+        <Typography variant="p" id='about'>About</Typography>
       </Link>
 
       <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
+        href=""
       >
         <Button color="ghost" className=' rounded-none'>
           <Typography 
             variant="p" 
             className="text-black" 
+            id='customer'
           >
             Customer
           </Typography>

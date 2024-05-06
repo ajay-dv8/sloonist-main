@@ -58,17 +58,18 @@ const dummyContent = [
 
           At Saloonist, we believe in the power of transformation. We understand that looking good is not just about vanity, but about feeling confident and expressing your unique personality. That’s why we are committed to providing our clients with top-notch services that leave them feeling refreshed, rejuvenated, and ready to conquer the world.
         </Typography>
+
         <Typography variant="p" className="tracking-wide leading-loose">
         Our team of highly skilled stylists and barbers are trained in the latest trends and techniques, ensuring that you always get the best. Whether you’re looking for a fresh haircut, a relaxing facial, or a complete makeover, we’ve got you covered.
         </Typography>
+
         <Typography variant="p" className="tracking-wide leading-loose">
         But we don’t stop at providing excellent services. We also strive to create a warm and welcoming environment where you can relax and enjoy your time with us. From the moment you step into our salon, you’ll be treated like a VIP.
         </Typography>
       </>
     ),
     badge: "Our Establishment",
-    image:
-      "https://img.freepik.com/free-photo/beautiful-afro-american-woman_144627-13084.jpg?t=st=1714866123~exp=1714869723~hmac=00f351d86ad3ea260e2dc927d61100ee25d8b1778634695e91448797d30503c0&w=740",
+    image: "/logo.svg",
   },
   {
     title: "The Premier Patron Experience",
