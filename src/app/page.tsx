@@ -100,17 +100,17 @@ export default function Home() {
           </div>
 
             {/* Our Works */}
-          <div className="flex flex-col gap-x-4 max-w-full w-full items-center mt-8">
-            <Typography data-aos="zoom-in" className="max-w-2xl mb-6" variant="h1">
+          <div data-aos="zoom-in" className="flex flex-col gap-x-4 max-w-full w-full items-center mt-8">
+            <Typography  className="max-w-2xl mb-6" variant="h1">
               Our Works
             </Typography>
 
-            <Typography data-aos="zoom-in-down" className="max-w-2xl opacity-40" variant="h5">
+            <Typography className="max-w-2xl opacity-40" variant="h5">
               At Saloonist we are committed to helping you look and feel your best 
               come experience the difference today.
             </Typography>
 
-            <div className="w-full -mt-16">
+            <div data-aos="fade-in" className="w-full -mt-16">
               <LayoutGridMain />
             </div>
 
