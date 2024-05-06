@@ -63,8 +63,8 @@ export default function Home() {
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
         <div className="flex flex-col gap-12 items-center">
           
-          <Typography className="max-w-2xl" variant="h1">
-            <span data-aos="zoom-in" className='opacity-30'>“ </span> Our &nbsp; Foundation <span className='opacity-30'>”</span>
+          <Typography data-aos="zoom-in" className="max-w-2xl" variant="h1">
+            <span className='opacity-30'>“ </span> Our &nbsp; Foundation <span className='opacity-30'>”</span>
           </Typography>
 
           <div className="flex md:flex-row flex-col gap-12">
@@ -141,7 +141,7 @@ export default function Home() {
         <SparklesBg />
 
         {/* Tank you */}
-        <Typography data-aos="fade-up"  variant="h4" className="opacity-40">
+        <Typography className="opacity-40 text-gray-400 li" data-aos="fade-up"  variant="h4" >
         “ We are here to help you look and feel your best <br />
           experience the difference. ”
         </Typography>
