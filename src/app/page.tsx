@@ -2,7 +2,6 @@
 
 import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
-// import Image from 'next/image'
 import Feature from './feature'
 import { BadgeCent, Timer, UsersRound } from 'lucide-react'
 import Link from 'next/link'
@@ -18,7 +17,6 @@ import { useEffect } from 'react'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-
 
 export default function Home() {
 
@@ -92,7 +90,7 @@ export default function Home() {
         <div className="w-full flex flex-col justify-center items-center">
 
             {/* About */}
-          <div className="mb-20">
+          <div id='about' className="mb-20">
             <Typography data-aos="zoom-in" className="max-w-2xl tracking-wide mb-16" variant="h1">
               <span className='opacity-30'>Let me tell you something</span> <br/>
               about us !
@@ -138,7 +136,9 @@ export default function Home() {
         <SVGMaskEffect data-aos="zoom-out-down"/>
 
         {/* Contact Section */}
-        <SparklesBg />
+         <div className="" id='contact'>
+          <SparklesBg />
+        </div>
 
         {/* Tank you */}
         <Typography className="opacity-40 text-gray-400 li" data-aos="fade-up"  variant="h4" >

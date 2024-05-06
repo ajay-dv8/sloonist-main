@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/drawer'
 import { MenuIcon, X } from 'lucide-react'
 import { Separator } from '../ui/separator'
+import React from 'react'
 
 interface SidebarProps
   extends React.HTMLAttributes<HTMLDivElement> {}
@@ -32,6 +33,14 @@ export function Header({ className }: SidebarProps) {
     // }
   ]
 
+  // const aboutRef = React.useRef(null);
+  // const customerRef = React.useRef(null);
+  // const contactRef = React.useRef(null);
+
+  // const scrollToAbout = () => aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+  // const scrollToCustomer = () => customerRef.current.scrollIntoView({ behavior: 'smooth' });
+  // const scrollToContact = () => contactRef.current.scrollIntoView({ behavior: 'smooth' });
+
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
       <img src="/logo.svg" className="mr-3" />
@@ -44,7 +53,7 @@ export function Header({ className }: SidebarProps) {
   const getAuthButtons = () => (
     <div className="flex gap-6 items-center">
       <Link
-        href=""
+        href="#contact"
       >
         <Typography variant="p" id='contact'>Contact</Typography>
       </Link>
@@ -52,13 +61,13 @@ export function Header({ className }: SidebarProps) {
       <Separator orientation='vertical'/>
 
       <Link
-        href=""
+        href="#about"
       >
         <Typography variant="p" id='about'>About</Typography>
       </Link>
 
       <Link
-        href=""
+        href="#customer"
       >
         <Button color="ghost" className=' rounded-none'>
           <Typography 
@@ -104,7 +113,7 @@ export function Header({ className }: SidebarProps) {
     <div
       className={cn(
         `flex md:h-12 h-14 items-center justify-center w-full
-          border-b backdrop-filter backdrop-blur-lg bg-gray-100 bg-opacity-20`,
+          backdrop-filter backdrop-blur-lg bg-gray-100 bg-opacity-20`,
         className
       )}
     >
